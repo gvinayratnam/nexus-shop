@@ -1,18 +1,14 @@
-import { useState } from 'react'
-
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <h1 className='text-red-900'>
-          nexus-mall
-        </h1>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<h1 className='text-amber-300'>nexus mall</h1>} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
