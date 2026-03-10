@@ -9,7 +9,7 @@ const Navbar = () => {
     const navLinkClass = ({ isActive }) =>
         isActive? 'text-textprimary bg-surface px-3 py-2 rounded-lg text-sm font-medium transition-all': 'text-textsecondary hover:text-textprimary hover:bg-surface px-3 py-2 rounded-lg text-sm font-medium       transition-all'
     return (
-        <nav className='fixed w-full top-0 left-0 z-50 border-b bg-bg'>
+        <nav className='fixed w-full top-0 left-0 z-50 border-b border-border bg-bg backdrop-blur-md'>
             <div className='max-w-7xl mx-auto px-6 h-16 flex items-center gap-6'>
                 <NavLink to="/" className='flex items-center h-full '>
                     <img src="/nexusshoplogo.png" alt="nexusshoplogo" className='h-12 w-auto object-contain' />
